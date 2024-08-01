@@ -11,8 +11,8 @@ import lombok.Setter;
 
 import java.util.Date;
 
-@Entity(name="tipo")
-@Table(name="tipo")
+@Entity(name="evento")
+@Table(name="evento")
 @Getter
 @Setter
 @AllArgsConstructor
@@ -29,10 +29,12 @@ public class Evento {
     private String descricao;
 
     private Integer lotacao;
-
-    private Endereco endereco;
-
-    private Tipo tipo;
+    @ManyToOne
+    @JoinColumn(name="id_endereco")
+    private Endereco endereco_id;
+    @ManyToOne
+    @JoinColumn(name="id_Tipo")
+    private Tipo tipo_id;
 
 
 
