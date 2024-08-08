@@ -28,8 +28,6 @@ public class TipoController {
         this.tipoRepository.save(tipo);
         return tipo;
 
-
-
         }
 
 }

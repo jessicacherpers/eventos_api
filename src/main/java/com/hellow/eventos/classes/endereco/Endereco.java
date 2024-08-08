@@ -20,7 +20,7 @@ public class Endereco {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     @Column(name="id")
-    private Integer id_endereco;
+    private Integer endereco_id;
 
 
 
@@ -52,7 +52,7 @@ public class Endereco {
 
 
      @ManyToOne
-     @JoinColumn(name="id_Tipo")
+     @JoinColumn(name="tipo_id")
     private Tipo tipo;
 
 

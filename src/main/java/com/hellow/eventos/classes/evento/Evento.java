@@ -30,10 +30,10 @@ public class Evento {
 
     private Integer lotacao;
     @ManyToOne
-    @JoinColumn(name="id_endereco")
+    @JoinColumn(name="endereco_id")
     private Endereco endereco_id;
     @ManyToOne
-    @JoinColumn(name="id_Tipo")
+    @JoinColumn(name="tipo_id")
     private Tipo tipo_id;
 
 
